@@ -11,6 +11,8 @@ Provide useful functionality, common to any web crawling project
 
 ### RobotsText
 example.py
+
+
       from WebCrawlingUtil import RobotsText
 
       robot_parser = RobotsText(text=ROBOT_TEXT_EXAMPLE)
@@ -38,6 +40,8 @@ example.py
 
 ### SitemapParser
 example.py
+
+
       from WebCrawlingUtil import SitemapParser
 
       url_examples = [
