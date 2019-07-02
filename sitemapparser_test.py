@@ -1,5 +1,7 @@
 import unittest
 import sitemapparser
+from selenium import webdriver
+import screenshot
 
 
 class TestSitemapparser(unittest.TestCase):
@@ -27,6 +29,10 @@ class TestSitemapparser(unittest.TestCase):
         parser.load()
 
         self.assertTrue(len(parser.objs) > 0)
+
+    def screen_shoter(self):
+        browser = webdriver.Chrome(executable_path="/Users/adrian/Downloads/chromedriver")
+        scshot = screenshot.take_screenshot()
 
 
 if __name__ == '__main__':
